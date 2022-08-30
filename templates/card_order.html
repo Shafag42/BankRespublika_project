@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Card Order</title>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h3 class="my-5">Öz kartını onlayn sifariş et</h3>
+    <form action="" method="POST" class="bg-light">
+        {{ form.csrf_token }}
+        <div class="row my-4 py-4">
+            <div class="col-3">
+                {{ form.card.label(class = 'form-label', for="card_name") }}
+                {{ form.card(class="form-select rounded-pill", id="card_name") }}
+            </div>
+            <div class="col-3">
+                {{ form.currency.label(class = 'form-label', for="card_currency") }}
+                {{ form.currency(class="form-select rounded-pill", id="card_currency") }}
+            </div>
+        </div>
+        <div class="row mt-3">
+            <div class="col-4 my-3">
+                {{ form.name.label(class = 'form-label', for="name") }}
+                {{ form.name( class="form-control rounded-pill", id="name", placeholder="Adınız") }}
+            </div>
+            <div class="col-4 my-3">
+                {{ form.surname.label(class = 'form-label', for="surname") }}
+                {{ form.surname( class="form-control rounded-pill", id="surname", placeholder="Soyadınız") }}
+            </div>
+            <div class="col-4 my-3">
+                {{ form.father_name.label(class = 'form-label', for="pname") }}
+                {{ form.father_name( class="form-control rounded-pill", id="pname", placeholder="Ata adınız") }}
+            </div>
+            <div class="col-4 my-3">
+                {{ form.birthday.label(class = 'form-label', for="date") }}
+                {{ form.birthday( class="form-control rounded-pill", id="date", placeholder="Doğum tarixi") }}
+            </div>
+            <div class="col-4 my-3">
+                {{ form.phone_number.label(class = 'form-label', for="phone") }}
+                {{ form.phone_number( class="form-control rounded-pill", id="phone", placeholder="Mobil nömrəniz") }}
+            </div>
+            <div class="col-4 my-3">
+                {{ form.address.label(class = 'form-label', for="address") }}
+                {{ form.address( class="form-control rounded-pill", id="address", placeholder="Address") }}
+            </div>
+            <div class="col-4 mt-3">
+                {{ form.email.label(class = 'form-label', for="email") }}
+                {{ form.email( class="form-control rounded-pill", id="email", placeholder="Email") }}
+            </div>
+        </div>
+        <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-outline-primary rounded-pill mb-3 me-5 py-2 px-5">Sifariş et</button>
+        </div>
+    </form>
+</div>
+{% endblock %}

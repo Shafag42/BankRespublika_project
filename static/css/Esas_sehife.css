@@ -1,0 +1,316 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: #FAFAFC; */
+}
+
+li {
+    list-style: none;
+    padding: 3px 0px;
+}
+
+ul {
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Gilroy';
+    margin: auto;
+}
+
+.footerimg .col-2 a img {
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0px 3px 5px 0px rgb(71 94 208 / 40%);
+}
+
+.footerimg .col-2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footerpart .col-6 {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 50px;
+}
+
+.socialicons li {
+    padding: 30px 10px;
+}
+
+.socialicons {
+    display: flex;
+}
+
+.socialicons li a {
+    color: #888;
+    font-size: 20px;
+}
+
+.col-2 h2 {
+    font-size: 16px;
+    padding: 15px 0px;
+}
+
+.col-2 li a {
+    font-size: 14px;
+}
+
+.rounded-pill {
+    background-color: #475ED0;
+    box-shadow: 0 6px 8px 0 rgb(71 94 208 / 40%);
+}
+
+.rounded-pill:hover {
+    background-color: #76B734;
+    border-color: #76B734;
+}
+
+.fa-check {
+    margin-right: 15px;
+    color: #76B734;
+}
+
+.card-title {
+    font-size: 20px;
+}
+
+.card-part {
+    margin-top: 12vh;
+}
+
+.whitebox {
+    box-shadow: 2px 2px 50px 0 rgb(107 125 230 / 10%);
+    background-color: #fff;
+}
+
+.img-fluid {
+    position: absolute;
+    width: 190px;
+    height: 170px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.bashliq {
+    display: flex;
+    justify-content: center;
+}
+
+u {
+    font-size: 20px;
+}
+
+.shadow {
+    box-shadow: 2px 2px 50px 0 rgb(107 125 230 / 20%);
+}
+
+.cgtitle {
+    color: #A7A7A7;
+}
+
+.bankmehsulu {
+    border: none;
+    background-color: transparent;
+}
+
+/* .bankmehsulu:hover .card+.bankmehsulu {
+background: #485DC6;
+color: #fff !important;
+-webkit-transition: all 0.2s ease-in-out;
+-moz-transition: all 0.2s ease-in-out;
+-ms-transition: all 0.2s ease-in-out;
+-o-transition: all 0.2s ease-in-out;
+transition: all 0.2s ease-in-out;
+} */
+.owl-nav {
+    display: flex;
+    justify-content: end;
+}
+
+.prtitle {
+    padding: 10px 0px 20px 0px;
+}
+
+.valyuta {
+    padding-bottom: 10px;
+}
+
+.rubl {
+    display: none;
+    background: #EDEFFA;
+    font-size: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    position: relative;
+    width: 150px;
+    top: -10px;
+    left: 20px;
+}
+
+/* .info {
+    position: absolute;
+    margin-left: 90px;
+    top: 0px;
+    padding-top: 50px;
+} */
+.info i {
+    color: #475ED0;
+}
+
+i {
+    /* position: relative; */
+    /* right: -44px; */
+    z-index: 1;
+    /* top: 50px; */
+    color: #666;
+}
+
+.col-md-2 strong {
+    color: #475ED0;
+}
+
+.bottom {
+    /* padding: 5px; */
+    border-bottom: 2px solid #475ED0;
+    color: #475ED0;
+}
+
+.app {
+    padding: 70px 0px;
+    position: relative;
+}
+
+/* .apptext {
+background-color: #fff;
+} */
+.block {
+    /* background: #fff; */
+    padding: 40px 30px 40px 330px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 50px 0 rgb(107 125 230 / 20%);
+}
+
+.appimg {
+    position: absolute;
+    top: 0px;
+    left: 50px;
+}
+
+.apptextinfo {
+    height: 125px;
+}
+
+.appstore {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.appstore li {
+    position: relative;
+    top: 10px;
+}
+
+.company-slider {
+    width: 100%;
+    padding-top: 100px;
+}
+
+.allcompany {
+    position: absolute;
+    /* color: #fff; */
+    font-size: 16px;
+    /* top: 25px; */
+    right: 125px;
+    z-index: 2;
+    text-decoration: underline;
+}
+
+.kampBack {
+    background-image: url(/static/images/endirim_reliz.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+/*
+.range {
+-webkit-appearance: none;
+width: 100%;
+height: 6px;
+background-color: #666;
+outline: none;
+opacity: 0.7;
+-webkit-transition: 0.2s;
+transition: opacity 0.2s;
+border-radius: 12px;
+box-shadow: 0px 1px 10px 1px #475ED0;
+} */
+/* Bu owl sliderde new partdir: */
+.owlslider {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.owlslider .owl-item.active.center .slider-card {
+    /* transform: scale(1.15); */
+    opacity: 1;
+    background-color: #fff;
+}
+
+.slider-card {
+    height: 90%;
+    /* width: auto; */
+    position: relative;
+    background-color: #fff;
+    margin: 50px 15px 90px 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 50px 0 rgb(107 125 230 / 20%);
+}
+
+/* .slider-card img {
+border-radius: 5px 5px 0px 0px;
+} */
+.owl-carousel .owl-item img {
+    height: 200px;
+    /* display: block; */
+    width: 210px;
+    padding-left: 10px;
+    border-radius: 20px;
+}
+
+.owlslider .owl-item.active .slider-card {
+    opacity: 0.3;
+    align-items: center;
+}
+
+.owlslider .owl-item .slider-card {
+    opacity: 0.3;
+    align-items: center;
+}
+
+.owl-carousel.owl-drag .owl-item {
+    height: 350px;
+}
+
+.owlslider .owl-item {
+    /* height: 50vh !important; */
+    width: 520px !important;
+}
+
+.owlslider .owl-item {
+    width: auto;
+    height: auto;
+}
+
+.CurrencyDiv>* {
+    color: #475ED0;
+}

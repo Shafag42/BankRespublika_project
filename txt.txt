@@ -1,0 +1,449 @@
+*******************************************************************************
+Kampaniya sehifesi
+
+c1 = Campaign_model(campaign_img = 'https://www.bankrespublika.az/uploads/Nagd%20Yubiley_fb.jpg', campaign_name = 'Bank Respublika “Yubiley Endirimi” adlı nağd kredit kampaniyasına start verib', active_time = 'Kampaniya 25/05/2022 -ci il tarixindən 25/05/2022 -ci il tarixinədək aktivdir.', description = 'Bank Respublika 30 yaşına həsr edilmiş nağd kredit kampaniyası elan edir!', create_at = '2022-05-16 12:37:00', )
+c2 = Campaign_model(campaign_img = 'https://www.bankrespublika.az/uploads/Maksimal%20endirim_30_fb.jpg', campaign_name = 'Bank Respublika 30 yaşı münasibətilə mikro kredit faizlərində 30% endirim elan edib!', active_time = 'Kampaniya 25/05/2022 -ci il tarixindən 25/05/2022 -ci il tarixinədək aktivdir.', description = 'Kampaniya çərçivəsində Bank Respublikaya müraciət edən iş adamları, mikro və aqro kredit faizlərində 30% ENDİRİM əldə edə biləcək!', create_at = '2022-05-06 09:36:00')
+-----
+yeni campanniya elavesi
+c3 = Campaign_model(campaign_img = 'https://www.bankrespublika.az/uploads/Maksimal%20endirim_30_fb.jpg', campaign_name = 'Bank Respublika 30 yaşı münasibətilə mikro kredit faizlərində 30% endirim elan edib!', active_time = 'Kampaniya 25/05/2022 -ci il tarixindən 25/05/2022 -ci il tarixinədək aktivdir.', description = 'Kampaniya çərçivəsində Bank Respublikaya müraciət edən iş adamları, mikro və aqro kredit faizlərində 30% ENDİRİM əldə edə biləcək!')
+
+*******************************************************************************
+Plastic_card sehifesi
+
+c1 = Plastic_card_model(filter = 'debit_f mastercard_f classic_f euro_f dollar_f' ,card_img = 'https://www.bankrespublika.az/uploads/NEO/Cards%20(2).png', card_name = 'NeoKart Standard', description = 'NeoKart vasitəsilə alış-veriş etdiyin yerdən asılı olamayaraq (restoran, yanacaqdoldurma məntəqəsi, mağaza və s.) hər zaman və hər yerdə Neobonuslar qazanacaqsan. Toplanan Neobonusları isə, keşbek, danışıq dəqiqələri, mobil internet və ya səyahət millərinə dəyişdirə biləcəksən.', price_v = '20 AZN', duration_v = '3 il', percent_v = 'AZN 3% / USD 0.1%', currency_v = 'AZN / USD / EUR', credit_line_v = '45 gün güzəşt müddəti', detail = '''<img src="/static/images/bg2.png" class="w-100">
+        <div class="w-75 mx-auto my-4">
+            <h3 class="text-center mb-3" style="color: #cc66ff;"><strong>Salam dostum!</strong></h3>
+            <p>Bu gündən Sən daha xoşbəxt və zəngin olacaqsan! Bunun üçün sənə digər qalaktikadan xüsusi bir hədiyyə
+                gətirmişəm - NeoKart!</p>
+            <p class="mb-5">NeoKart vasitəsilə alış-veriş etdiyin yerdən asılı olmayaraq (restoran, yanacaqdoldurma məntəqəsi, mağaza
+                və s.) hər zaman və hər yerdə Neobonuslar qazanacaqsan. Toplanan Neobonusları isə, keşbek, danışıq
+                dəqiqələri, mobil internet və ya səyahət millərinə dəyişdirə biləcəksən. Bu isə o deməkdir ki, nə qədər
+                çox pul xərcləsən, sənə bir o qədər çox Neobonus verə biləcəm! Bunun üçün NeoKartınla ödənişləri POS
+                terminal vasitəsilə və ya sevdiyin saytlarda onlayn rejimdə etməyin kifayətdir.</p>
+            <h3 class="text-center my-5" style="color: #cc66ff;"><strong>Neo ilə Hər Yerdə Qazan!</strong></h3>
+            <table class="table mb-">
+                <tbody>
+                    <tr class="text-center">
+                        <td class="w-25"><img src="https://www.bankrespublika.az/uploads/NEO/cashback.png" width="50px">
+                        </td>
+                        <td class="w-25"><img src="https://www.bankrespublika.az/uploads/NEO/mil.png" width="50px"></td>
+                        <td class="w-25"><img src="https://www.bankrespublika.az/uploads/NEO/deqiqe.png" width="50px">
+                        </td>
+                        <td class="w-25"><img src="https://www.bankrespublika.az/uploads/NEO/faiz%20hesaba.png"
+                                width="50px"></td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="w-25"><strong>KeşBek</strong></td>
+                        <td class="w-25"><strong>Uçuş Milləri</strong></td>
+                        <td class="w-25"><strong>Dəqiqələr İnternet</strong></td>
+                        <td class="w-25"><strong>Hesab qalığına faiz</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <img src="https://www.bankrespublika.az/uploads/NEO/Cards%20(2).png" width="475px">
+                <img src="https://www.bankrespublika.az/uploads/NEO/Cards.png" width="475px">
+            </div>
+            <table class="table table-hover my-5">
+                <thead>
+                    <th scope="col" class="text-center py-3">NeoKart Standard</th>
+                    <th scope="col" class="text-center py-3">NeoKart Premium</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center py-3">Müddət 3 il</td>
+                        <td class="text-center py-3">Müddət 3 il</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3">Qiymət 20 AZN</td>
+                        <td class="text-center py-3">Qiymət 80 AZN</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3">Qalıq üzrə faiz AZN 3% / USD 0.1%</td>
+                        <td class="text-center py-3">Qalıq üzrə faiz AZN 5% / USD 0.2%</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3">-</td>
+                        <td class="text-center py-3">Lounge Key 2 Keçid</td>
+                    </tr>
+                    <tr style="color: #cc66ff;">
+                        <td class="text-center py-3">Xoşgəldin Bonusu 2000</td>
+                        <td class="text-center py-3">Xoşgəldin Bonusu 4000</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3"><img src="https://www.bankrespublika.az/uploads/Elave/pdf%20(1).png" width="40px"></td>
+                        <td class="text-center py-3"><a href="https://www.bankrespublika.az/uploads/neodebet%20tariffs.pdf">NeoKart üzrə tariflər</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="mb-3">
+                <a class="btn btn-primary btn-outline-success text-light rounded-pill w-100 mb-3 py-2" href="whatsapp://send?text=NeoKart&phone=+994514144144&abid=+994514144144" role="button">WhatsApp-la müraciət et!</a>
+                <a class="btn btn-primary btn-outline-success text-light rounded-pill w-100 mb-3 py-2" href="/card_order/" role="button">Online sifariş ver!</a>
+            </div>
+            <p>NeoKart ilə heç bir ödəniş etməsən belə, kartındakı pulun sənə gəlir gətirəcək. Hər ay qalıq vəsaitə görə illik 5%-ə qədər qazanc əldə edə bilərsən. Fikrimcə, bu əla təklifdir.</p>
+            <p>NeoKartını elə indi sifariş et və hədiyyə olaraq <span style="color: #cc66ff;">4000-ə qədər Xoşgəldin bonusu qazan! *</span></p>
+            <h3 class="text-center mt-5 mb-4" style="color: #cc66ff;"><strong>KREDİT KARTI</strong></h3>
+            <table class="table table-hover">
+                <tbody>
+                    <tr>
+                        <td class="text-center py-3"><strong>Güzəşt müddəti:</strong></td>
+                        <td class="text-center py-3">45 gün</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3"><strong>Məbləğ:</strong></td>
+                        <td class="text-center py-3">NeoKart Standard - 5 000 AZN-dək<br>NeoKart Premium - 15 000 AZN-dək</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3"><strong>Kredit xəttinin müddəti:</strong></td>
+                        <td class="text-center py-3">24 ayadək</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3"><strong>Kartın istifadə müddəti:</strong></td>
+                        <td class="text-center py-3">36 ayadək</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3"><strong>İllik faiz dərəcəsi:</strong></td>
+                        <td class="text-center py-3">24% - 26%</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3"><strong>Komissiya:</strong></td>
+                        <td class="text-center py-3">1%</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3"><strong>Kredit xəttindən istifadə edilən vəsaitə görə keşbek:</strong></td>
+                        <td class="text-center py-3">2%</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3"><strong>Debet qalıq məbləğə görə faiz gəliri:</strong></td>
+                        <td class="text-center py-3">3% - 5% (max. 10 000 AZN)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3"><strong>Şəxsi vəsait karta mədaxil edilərsə, Bank Respublika <br> ATM-lərində nağdlaşdırma:</strong></td>
+                        <td class="text-center py-3">0% (max. 20 000 AZN)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+               <div class="text-center my-4"><img src="https://www.bankrespublika.az/uploads/NEO/3.png"  width="150px"></div>
+        </div>''')
+
+c2 = Plastic_card_model(filter = 'debit_f mastercard_f premium_f euro_f dollar_f' ,card_img = 'https://www.bankrespublika.az/uploads/NEO/Cards.png', card_name = 'NeoKart Premium', description = 'NeoKart vasitəsilə alış-veriş etdiyin yerdən asılı olamayaraq (restoran, yanacaqdoldurma məntəqəsi, mağaza və s.) hər zaman və hər yerdə Neobonuslar qazanacaqsan. Toplanan Neobonusları isə, keşbek, danışıq dəqiqələri, mobil internet və ya səyahət millərinə dəyişdirə biləcəksən.', price_v = '80 AZN', duration_v = '3 il', percent_v = 'AZN 5% / USD 0.2%', currency_v = 'AZN / USD / EUR', credit_line_v = '45 gün güzəşt müddəti', detail = '''<img src="/static/images/bg2.png" class="w-100">
+        <div class="w-75 mx-auto my-4">
+            <h3 class="text-center mb-3" style="color: #cc66ff;"><strong>Salam dostum!</strong></h3>
+            <p>Bu gündən Sən daha xoşbəxt və zəngin olacaqsan! Bunun üçün sənə digər qalaktikadan xüsusi bir hədiyyə
+                gətirmişəm - NeoKart!</p>
+            <p class="mb-5">NeoKart vasitəsilə alış-veriş etdiyin yerdən asılı olmayaraq (restoran, yanacaqdoldurma məntəqəsi, mağaza
+                və s.) hər zaman və hər yerdə Neobonuslar qazanacaqsan. Toplanan Neobonusları isə, keşbek, danışıq
+                dəqiqələri, mobil internet və ya səyahət millərinə dəyişdirə biləcəksən. Bu isə o deməkdir ki, nə qədər
+                çox pul xərcləsən, sənə bir o qədər çox Neobonus verə biləcəm! Bunun üçün NeoKartınla ödənişləri POS
+                terminal vasitəsilə və ya sevdiyin saytlarda onlayn rejimdə etməyin kifayətdir.</p>
+            <h3 class="text-center my-5" style="color: #cc66ff;"><strong>Neo ilə Hər Yerdə Qazan!</strong></h3>
+            <table class="table mb-">
+                <tbody>
+                    <tr class="text-center">
+                        <td class="w-25"><img src="https://www.bankrespublika.az/uploads/NEO/cashback.png" width="50px">
+                        </td>
+                        <td class="w-25"><img src="https://www.bankrespublika.az/uploads/NEO/mil.png" width="50px"></td>
+                        <td class="w-25"><img src="https://www.bankrespublika.az/uploads/NEO/deqiqe.png" width="50px">
+                        </td>
+                        <td class="w-25"><img src="https://www.bankrespublika.az/uploads/NEO/faiz%20hesaba.png"
+                                width="50px"></td>
+                    </tr>
+                    <tr class="text-center">
+                        <td class="w-25"><strong>KeşBek</strong></td>
+                        <td class="w-25"><strong>Uçuş Milləri</strong></td>
+                        <td class="w-25"><strong>Dəqiqələr İnternet</strong></td>
+                        <td class="w-25"><strong>Hesab qalığına faiz</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div>
+                <img src="https://www.bankrespublika.az/uploads/NEO/Cards%20(2).png" width="475px">
+                <img src="https://www.bankrespublika.az/uploads/NEO/Cards.png" width="475px">
+            </div>
+            <table class="table table-hover my-5">
+                <thead>
+                    <th scope="col" class="text-center py-3">NeoKart Standard</th>
+                    <th scope="col" class="text-center py-3">NeoKart Premium</th>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="text-center py-3">Müddət 3 il</td>
+                        <td class="text-center py-3">Müddət 3 il</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3">Qiymət 20 AZN</td>
+                        <td class="text-center py-3">Qiymət 80 AZN</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3">Qalıq üzrə faiz AZN 3% / USD 0.1%</td>
+                        <td class="text-center py-3">Qalıq üzrə faiz AZN 5% / USD 0.2%</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3">-</td>
+                        <td class="text-center py-3">Lounge Key 2 Keçid</td>
+                    </tr>
+                    <tr style="color: #cc66ff;">
+                        <td class="text-center py-3">Xoşgəldin Bonusu 2000</td>
+                        <td class="text-center py-3">Xoşgəldin Bonusu 4000</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3"><img src="https://www.bankrespublika.az/uploads/Elave/pdf%20(1).png" width="40px"></td>
+                        <td class="text-center py-3"><a href="https://www.bankrespublika.az/uploads/neodebet%20tariffs.pdf">NeoKart üzrə tariflər</a></td>
+                    </tr>
+                </tbody>
+            </table>
+            <div class="mb-3">
+                <a class="btn btn-primary btn-outline-success text-light rounded-pill w-100 mb-3 py-2" href="whatsapp://send?text=NeoKart&phone=+994514144144&abid=+994514144144" role="button">WhatsApp-la müraciət et!</a>
+                <a class="btn btn-primary btn-outline-success text-light rounded-pill w-100 mb-3 py-2" href="/card_order/" role="button">Online sifariş ver!</a>
+            </div>
+            <p>NeoKart ilə heç bir ödəniş etməsən belə, kartındakı pulun sənə gəlir gətirəcək. Hər ay qalıq vəsaitə görə illik 5%-ə qədər qazanc əldə edə bilərsən. Fikrimcə, bu əla təklifdir.</p>
+            <p>NeoKartını elə indi sifariş et və hədiyyə olaraq <span style="color: #cc66ff;">4000-ə qədər Xoşgəldin bonusu qazan! *</span></p>
+            <h3 class="text-center mt-5 mb-4" style="color: #cc66ff;"><strong>KREDİT KARTI</strong></h3>
+            <table class="table table-hover">
+                <tbody>
+                    <tr>
+                        <td class="text-center py-3"><strong>Güzəşt müddəti:</strong></td>
+                        <td class="text-center py-3">45 gün</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3"><strong>Məbləğ:</strong></td>
+                        <td class="text-center py-3">NeoKart Standard - 5 000 AZN-dək<br>NeoKart Premium - 15 000 AZN-dək</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3"><strong>Kredit xəttinin müddəti:</strong></td>
+                        <td class="text-center py-3">24 ayadək</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3"><strong>Kartın istifadə müddəti:</strong></td>
+                        <td class="text-center py-3">36 ayadək</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3"><strong>İllik faiz dərəcəsi:</strong></td>
+                        <td class="text-center py-3">24% - 26%</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3"><strong>Komissiya:</strong></td>
+                        <td class="text-center py-3">1%</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3"><strong>Kredit xəttindən istifadə edilən vəsaitə görə keşbek:</strong></td>
+                        <td class="text-center py-3">2%</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3"><strong>Debet qalıq məbləğə görə faiz gəliri:</strong></td>
+                        <td class="text-center py-3">3% - 5% (max. 10 000 AZN)</td>
+                    </tr>
+                    <tr>
+                        <td class="text-center py-3"><strong>Şəxsi vəsait karta mədaxil edilərsə, Bank Respublika <br> ATM-lərində nağdlaşdırma:</strong></td>
+                        <td class="text-center py-3">0% (max. 20 000 AZN)</td>
+                    </tr>
+                </tbody>
+            </table>
+
+               <div class="text-center my-4"><img src="https://www.bankrespublika.az/uploads/NEO/3.png"  width="150px"></div>
+        </div>''')
+
+c3 = Plastic_card_model(filter = 'credit_f debit_f mastercard_f classic_f euro_f dollar_f azn_f' ,card_img = 'https://www.bankrespublika.az/uploads/debet.png', card_name = 'MasterCard Debet', description = ' ', price_v = '9 / 15/ 20 / 30 AZN - (ilkin mədaxil olmadan)', duration = 'İlkin mədaxil', duration_v = '1 / 2 / 3  il - 500 AZN/ 250 USD (EUR)', percent = 'İlkin mədaxil', percent_v = '5 il - 1 000 AZN/ 500 USD (EUR)', currency = ' ', currency_v = 'AZN / USD / EUR', credit_line_v = '2 000 AZN / EUR / USD', detail = '''<div class="w-75 mx-auto my-4">
+            <div>
+                <table class="table table-hover">
+                    <tbody>
+                        <tr>
+                            <td class="py-3">Buraxılma haqqı (ilkin mədaxil ilə)</td>
+                            <td class="py-3">0</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Buraxılma haqqı (ilkin mədaxil olmadan)</td>
+                            <td class="py-3">9 / 15 / 20 / 30 AZN</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Kart hesabına ilkin mədaxilin minimal məbləği</td>
+                            <td class="py-3">1 / 2 / 3 il - 500 AZN/ 250 USD (EUR) <br>
+                                5 il - 1 000 AZN/ 500 USD (EUR)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Sığorta depozitinin minimal məbləği</td>
+                            <td class="py-3">0</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Kart hesabına açılan kredit xəttinin maksimal məbləği</td>
+                            <td class="py-3">2000 AZN (USD, EUR*)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Faizsiz kreditin maksimal məbləği **</td>
+                            <td class="py-3">1000 AZN (USD, EUR*)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Yaranmış borca hesablanan faiz dərəcəsi **</td>
+                            <td class="py-3">25%</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Limitdən / qalıqdan artıq istifadə olunan məbləğə görə hesablanan cərimə</td>
+                            <td class="py-3">42% illik</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Kartın vaxtından əvvəl dəyişdirilməsi</td>
+                            <td class="py-3">5 AZN</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Kartın statusunun dəyişdirilməsi və bloklanmış kartın açılması</td>
+                            <td class="py-3">3 AZN</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Kartın təcili hazırlanması haqqı</td>
+                            <td class="py-3">10 AZN</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Kart itirildikdə cərimə haqqı</td>
+                            <td class="py-3">5 AZN</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Ödənişlərə əsassız etiraza dair xidmətə görə komisyon haqqı</td>
+                            <td class="py-3">15 AZN</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>* Avro (EUR) valyutada hesablar yalnız MasterCard və Maestro kartları üçün açılır.</p>
+                <p><a href="https://www.bankrespublika.az/uploads/isifade%20qaydalari%20aze.pdf"
+                        target="_blank"><strong>“Bank Respublika” ASC-nin bank kartlarından istifadə və xidmət
+                            Qaydaları</strong></a></p>
+            </div>
+        </div>''')
+
+c4 = Plastic_card_model(filter = 'credit_f debit_f mastercard_f premium_f euro_f dollar_f azn_f' ,card_img = 'https://www.bankrespublika.az/uploads/100il.png', card_name = 'MasterCard Platinum - Cümhuriyyət 100 il.', description = ' ', price_v = '20 / 30/ 40 / 60 AZN - (ilkin mədaxil olmadan)', duration = 'İlkin mədaxil', duration_v = '1 / 2 / 3  il - 2 000 AZN/ 1 000 USD (EUR)', percent = 'İlkin mədaxil', percent_v = '5 il - 3 000 AZN/ 1 500 USD (EUR)', currency = ' ', credit_line_v = '50 000 AZN/USD', detail = '''<div class="w-75 mx-auto my-4">
+            <div>
+                <p>Kartın məxsusi dizaynında əks olunan Azərbaycanın tarixi xəritəsi və bank tərəfindən Cümhuriyyətin
+                    100 illiyi münasibətilə tərtib edilmiş loqotip - şərəfli tariximizə böyük önəm verilməsi haqqında
+                    xəbər verir. Yeni bank kartları qızılı və gümüşü rəng tonlarında Gold və Platinum kartlarına uyğun
+                    hazırlanıb.</p>
+                <p>Bank Respublika xalqımızı Azərbaycan Xalq Cümhuriyyətinin yaranmasının 100 illiyi münasibətilə təbrik
+                    edir, vətənimizin uzun illər boyu yaşayıb çiçəklənməsini arzulayır.</p>
+                <table class="table table-hover mt-3">
+                    <tbody>
+                        <tr>
+                            <td class="py-3">Buraxılma haqqı (ilkin mədaxil ilə)</td>
+                            <td class="py-3">0</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Buraxılma haqqı (ilkin mədaxil olmadan)</td>
+                            <td class="py-3">1 / 2 / 3 il - 20 / 30/ 40 / 60 AZN</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Kart hesabına ilkin mədaxilin minimal məbləği</td>
+                            <td class="py-3">1 / 2 / 3 il - 2 000 AZN/ 1 000 USD (EUR) <br>
+                                5 il - 3 000 AZN/ 1 500 USD (EUR)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Sığorta depozitinin minimal məbləği</td>
+                            <td class="py-3">0</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Kart hesabına açılan kredit xəttinin maksimal məbləği</td>
+                            <td class="py-3">50 000 AZN (USD, EUR*)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Faizsiz kreditin maksimal məbləği **</td>
+                            <td class="py-3">10 000 AZN (USD, EUR*)</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Yaranmış borca hesablanan faiz dərəcəsi **</td>
+                            <td class="py-3">25% illik</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Limitdən / qalıqdan artıq istifadə olunan məbləğə görə hesablanan cərimə</td>
+                            <td class="py-3">42% illik</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Kartın vaxtından əvvəl dəyişdirilməsi</td>
+                            <td class="py-3">10 AZN</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Kartın statusunun dəyişdirilməsi və bloklanmış kartın açılması</td>
+                            <td class="py-3">3 AZN</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Kart itirildikdə cərimə haqqı</td>
+                            <td class="py-3">20 AZN</td>
+                        </tr>
+                        <tr>
+                            <td class="py-3">Ödənişlərə əsassız etiraza dair xidmətə görə komisyon haqqı</td>
+                            <td class="py-3">15 AZN</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>* Avro (EUR) valyutada hesablar yalnız MasterCard və Maestro kartları üçün açılır.</p>
+                <p><a href="https://www.bankrespublika.az/uploads/isifade%20qaydalari%20aze.pdf"
+                        target="_blank"><strong>“Bank Respublika” ASC-nin bank kartlarından istifadə və xidmət
+                            Qaydaları</strong></a></p>
+            </div>
+        </div>>''')
+
+c5 = Plastic_card_model(filter = 'debit_f visa_f premium_f azn_f dollar_f' ,card_img = 'https://www.bankrespublika.az/uploads/Mover%20Visa%20Premium.png', card_name = 'Mover Visa Platinium', description = 'Bank Respublika, e-ticarətdə liderlərdən biri olan Mover ilə birgə yeni sərfəli "Mover Visa Platinium" kobrend kartını təklif edir.', price = 'Qiymət', price_v = '1 illik 25 azn', duration = 'Qiymət', duration_v = '2 illik 40 azn', percent = 'Qiymət', percent_v = '3 illik 50 azn', currency = ' ', credit_line = ' ', detail = '''<div class="w-75 mx-auto my-4">
+            <div>
+                <h6>Moverkart üstünlükləri</h6>
+                <p>Moverkart istifadəçilərini e-ticarətdə böyük bonuslar, özəl kampaniyalar, yüksək faizli “cashback” və
+                    daha onlarla üstünlük gözləyir</p>
+                <h6>Moverkart sahibləri;</h6>
+                <ul>
+                    <li class="py-2">Mover`in Standard (Qrama-Qram) və Premium tariflərindən istifadə imkanı qazanacaq</li>
+                    <li class="py-2">Mover`da ödədikləri bütün daşınma haqqlarına 15% cashback bonusu qazanacaq</li>
+                    <li class="py-2">Kuryer xidmətinə 50% endirim qazanacaq</li>
+                    <li class="py-2">Kitab daşınmasına 50% endirim qazanacaq</li>
+                    <li class="py-2">Gömrük məsləhətçisi xidmətinə 30% endirim qazanacaq</li>
+                    <li class="py-2">Bağlamalarını 14 gün anbarda pulsuz saxlaya biləcək</li>
+                    <li class="py-2">Amerikadan sifarişlərinin paketini kiçiltdirə biləcək. Kart istifadəçiləri bütün bu üstün Mover
+                        xidmətlərindən əlavə;</li>
+                    <li class="py-2">Faizsiz konvertasiya • Pulsuz 3D təhlükəsizlik xidməti</li>
+                    <li class="py-2">Pulsuz mobil bankinq</li>
+                    <li class="py-2">Mover tətbiqindən əməliyyatlarını izləmə imkanı</li>
+                    <li class="py-2"><strong>Bank Respublikanın bonus qazandıran böyük şəbəkəsinə çıxış imkanı əldə edəcək. Moverkart
+                            Platinium istifadəçiləri isə əsl üstünlüyü hiss edəcək. Platinium karta sahib olan
+                            müştərilər yuxarıdakı bütün üstünlüklərlə bərabər;</strong></li>
+                    <li class="py-2"><u>Xüsusi müştəri xidməti dəstəyi əldə edəcək (Mənə zəng et xidməti)</u></li>
+                    <li class="py-2"><u>Xarici anbarlarımızdakı bağlamalarının fotosunu əldə edə biləcək (ödənişsiz ayda 3 dəfə)</u>
+                    </li>
+                    <li class="py-2"><u>Bağlamasını xarici anbarlarımızdan geri qaytara biləcək (ödənişsiz ayda 3 dəfə)</u></li>
+                    <li class="py-2"><u>2 ədəd pulsuz Covid-19 testi qazanacaq</u></li>
+                    <li class="py-2"><u>Bakı aeroportuna VİP girişi imkanı qazanacaq</u></li>
+                    <li class="py-2"><u>Dünyanın 280 nöqtəsində VİSA dəstəyi əldə edəcək</u></li>
+                    <li class="py-2"><u>Və daha onlarla VİSA Platinium avantajları qazanacaq.</u></li>
+                </ul>
+                <p>Moverkart sahibləri eyni zamanda “Bank Respublika”nın Paykart bonus sistemi daxilində onlarla
+                    partnyor şəbəkəsində alış-veriş zamanı 25%-ə qədər əlavə bonuslar qazanmaq şansı əldə edəcək.</p>
+            </div>
+        </div>''')
+
+c6 = Plastic_card_model(filter = 'debit_f visa_f classic_f azn_f' ,card_img = 'https://www.bankrespublika.az/uploads/Mover%20Visa%20Classic.png', card_name = 'Mover Visa Classic', description = 'Bank Respublika, e-ticarətdə liderlərdən biri olan Mover ilə birgə yeni sərfəli "Mover Visa Classic" kobrend kartını təklif edir.', price = 'Qiymət', price_v = '1 illik 10 azn', duration = 'Qiymət', duration_v = '2 illik 15 azn', percent = 'Qiymət', percent_v = '3 illik 20 azn', currency = ' ', credit_line = ' ', detail = '''<div class="w-75 mx-auto my-4">
+            <div>
+                <h6>Moverkart üstünlükləri</h6>
+                <p>Moverkart istifadəçilərini e-ticarətdə böyük bonuslar, özəl kampaniyalar, yüksək faizli “cashback” və
+                    daha onlarla üstünlük gözləyir</p>
+                <h6>Moverkart sahibləri;</h6>
+                <ul>
+                    <li class="py-2">Mover`in Standard (Qrama-Qram) və Premium tariflərindən istifadə imkanı qazanacaq</li>
+                    <li class="py-2">Mover`da ödədikləri bütün daşınma haqqlarına 15% cashback bonusu qazanacaq</li>
+                    <li class="py-2">Kuryer xidmətinə 50% endirim qazanacaq</li>
+                    <li class="py-2">Kitab daşınmasına 50% endirim qazanacaq</li>
+                    <li class="py-2">Gömrük məsləhətçisi xidmətinə 30% endirim qazanacaq</li>
+                    <li class="py-2">Bağlamalarını 14 gün anbarda pulsuz saxlaya biləcək</li>
+                    <li class="py-2">Amerikadan sifarişlərinin paketini kiçiltdirə biləcək. Kart istifadəçiləri bütün bu üstün Mover
+                        xidmətlərindən əlavə;</li>
+                    <li class="py-2">Faizsiz konvertasiya • Pulsuz 3D təhlükəsizlik xidməti</li>
+                    <li class="py-2">Pulsuz mobil bankinq</li>
+                    <li class="py-2">Mover tətbiqindən əməliyyatlarını izləmə imkanı</li>
+                    <li class="py-2"><strong>Bank Respublikanın bonus qazandıran böyük şəbəkəsinə çıxış imkanı əldə edəcək. Moverkart
+                            Platinium istifadəçiləri isə əsl üstünlüyü hiss edəcək. Platinium karta sahib olan
+                            müştərilər yuxarıdakı bütün üstünlüklərlə bərabər;</strong></li>
+                    <li class="py-2"><u>Xüsusi müştəri xidməti dəstəyi əldə edəcək (Mənə zəng et xidməti)</u></li>
+                    <li class="py-2"><u>Xarici anbarlarımızdakı bağlamalarının fotosunu əldə edə biləcək (ödənişsiz ayda 3 dəfə)</u>
+                    </li>
+                    <li class="py-2"><u>Bağlamasını xarici anbarlarımızdan geri qaytara biləcək (ödənişsiz ayda 3 dəfə)</u></li>
+                    <li class="py-2"><u>2 ədəd pulsuz Covid-19 testi qazanacaq</u></li>
+                    <li class="py-2"><u>Bakı aeroportuna VİP girişi imkanı qazanacaq</u></li>
+                    <li class="py-2"><u>Dünyanın 280 nöqtəsində VİSA dəstəyi əldə edəcək</u></li>
+                    <li class="py-2"><u>Və daha onlarla VİSA Platinium avantajları qazanacaq.</u></li>
+                </ul>
+                <p>Moverkart sahibləri eyni zamanda “Bank Respublika”nın Paykart bonus sistemi daxilində onlarla
+                    partnyor şəbəkəsində alış-veriş zamanı 25%-ə qədər əlavə bonuslar qazanmaq şansı əldə edəcək.</p>
+            </div>
+        </div>''')

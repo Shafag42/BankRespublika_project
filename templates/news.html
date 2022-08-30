@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Xəbərlər</title>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Xəbərlər</h1>
+    {% for news in news_ %}
+    <div class="card mb-4" style="min-height: 250px;">
+        <div class="row g-0">
+            <div class="col-md-3">
+                <img src="{{ news.news_img }}" class="img-fluid rounded-start m-3" width="250px" height="250px">
+            </div>
+            <div class="col-md-8">
+                <div class="card-body">
+                    <h5 class="card-title mb-4"><a href="{{ url_for('news_detail', id = news.id) }}"
+                            class="text-decoration-none text-dark">{{ news.news_name }}</a></h5>
+                    <p class="card-text">{{ news.description }}</p>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <p class="text-muted">{{ news.create_at.strftime("%m.%d.%Y") }}</p>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

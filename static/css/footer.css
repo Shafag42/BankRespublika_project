@@ -1,0 +1,281 @@
+.footerIcons li a img {
+    display: block;
+    border-radius: 10px;
+    width: 55px;
+    height: 55px;
+    box-shadow: 0 6px 8px 0 rgb(71 94 208 / 40%);
+    margin: 0px auto;
+}
+
+.footerIcons li a {
+    display: block;
+    text-decoration: none;
+    color: #000;
+    margin: 0px auto;
+    font: inherit;
+    /* vertical-align: baseline; */
+}
+
+.footerIcons li {
+    display: table-cell;
+}
+
+.footerIcons {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+
+
+.footerIcons li a span {
+    display: block;
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+}
+
+.footerTop {
+    border-bottom: 1px solid #ececec;
+    padding: 20px 0px;
+}
+
+.footerCont {
+    padding: 30px 0px;
+}
+
+.content {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0px 40px;
+    position: relative;
+    margin: 0px auto;
+}
+
+.col {
+    -ms-flex-preferred-size: 0;
+    flex-basis: 0;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    max-width: 100%;
+}
+
+.footerBlocks {
+    display: inline-block;
+    padding: 0px 50px 0px 0px;
+    vertical-align: top;
+}
+
+.footerCont h2 {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 0px;
+    display: block;
+}
+
+.footerBlocks .simpleList li {
+    padding: 5px 0px;
+}
+
+.simpleList li {
+    padding: 5px 10px;
+}
+
+.footerCont .simpleList li a {
+    font-size: 14px;
+}
+
+.simpleList li a {
+    color: #000;
+    font-size: 16px;
+    text-decoration: none;
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+}
+
+.footerBlocks .simpleList li {
+    padding: 5px 0px;
+}
+
+.footerCont .simpleList li a {
+    font-size: 14px;
+}
+
+.footerBlocks {
+    display: inline-block;
+    padding: 0px 50px 0px 0px;
+    vertical-align: top;
+}
+
+.footerCont h2 {
+    font-family: Gilroy;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 0px;
+    display: block;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+.footerBlocks.lastest {
+    float: right;
+    padding-top: 50px;
+}
+
+.footerBlocks .simpleList li {
+    padding: 5px 0px;
+}
+
+.footerCont .simpleList li a {
+    font-size: 14px;
+}
+
+.sochialAccaunts {
+    margin-top: 40px;
+    /* padding-left: 5px; */
+    margin-left: -15px;
+    background-color: #000;
+}
+
+.sochialAccaunts li {
+    display: inline-block;
+    font-size: 20px;
+    padding: 5px 10px;
+    color: #888;
+}
+
+.sochialAccaunts li a {
+    text-decoration: none;
+    color: #888;
+}
+
+.ico-facebook:before {
+    content: '\0044';
+}
+
+[class*='icon-']:before,
+[class*='ico-']:before {
+    display: inline-block;
+    font-family: 'Glyphter';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.clear {
+    clear: both;
+    width: 100%;
+    height: 1px;
+}
+
+.copyright {
+    padding: 20px 0px;
+    border-top: 1px solid #ececec;
+    color: #666;
+    text-align: left;
+    font-size: 14px;
+}
+
+.content {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0px 40px;
+    position: relative;
+    margin: 0px auto;
+}
+
+.row {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+
+}
+
+
+.col-md-6 {
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.footerList li {
+    display: inline;
+    margin: 0px 10px;
+    float: right;
+}
+
+.footerList li img {
+    height: 25px;
+}
+
+.fa {
+    width: 20px;
+    padding: 5px;
+    font-size: 25px;
+    text-align: right;
+    text-decoration: none;
+    /* margin: 5px 2px; */
+    color: #474747;
+    border-radius: 50%;
+}
+
+#footer {
+    background: #fff;
+    margin-top: 30px;
+}
+
+.footerTop {
+    border-bottom: 1px solid #ececec;
+    padding: 20px 0px;
+}
+
+.content {
+    width: 100%;
+    max-width: 1440px;
+    padding: 0px 40px;
+    position: relative;
+    margin: 0px auto;
+}
+
+.footerIcons li {
+    display: table-cell;
+}
+
+.footerIcons li a span {
+    display: block;
+    padding: 20px 0px 10px 0px;
+    text-align: center;
+}
+
+.simpleList {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+
+.simpleList a:hover {
+
+    color: blue
+}
+
+.sochialAccaunts ul {
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}

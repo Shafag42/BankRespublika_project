@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="{{ url_for('static', filename = 'css/news_detail.css') }}">
+<title>Xəbər Ətraflı</title>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h3 class="my-4">{{ news.news_name }}</h3>
+    <div class="d-flex">
+        <div class="w-25">
+            <h6 class="my-5 mx-5">Sosial şəbəkələrdə paylaş</h6>
+            <ul class="listsytle mx-5">
+                <li><a href="https://www.facebook.com/" class="text-decoration-none rounded-circle fa fa-facebook"
+                        target="_blank"></a>
+                </li>
+                <li><a href="https://twitter.com/i/flow/login" class="text-decoration-none rounded-circle fa fa-twitter"
+                        target="_blank"></a></li>
+                <li><a href="https://plus.google.com/" class="text-decoration-none rounded-circle fa fa-google-plus"
+                        target="_blank"></a></li>
+                <li><a href="https://vk.com/" class="text-decoration-none rounded-circle fa fa-vk" target="_blank"></a>
+                </li>
+                <li><a href="https://www.linkedin.com/" class="text-decoration-none rounded-circle fa fa-linkedin"
+                        target="_blank"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="w-75">
+            <div class="w-75 mx-5">
+                <div class="mx-5 my-4">
+                    <img src="{{ news.news_img }}" width="650px" height="435px">
+                </div>
+                <div>
+                    {{ news.news_detail | safe }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

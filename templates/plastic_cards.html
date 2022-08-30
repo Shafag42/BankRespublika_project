@@ -1,0 +1,103 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Plastic cards</title>
+{% endblock %}
+
+{% block content %}
+<div class="container mb-5">
+    <h3>Plastik kartlar</h3>
+    <div class="d-flex justify-content-between">
+        <div>
+            <ul class="list-group list-group-horizontal rounded-pill">
+                <li type="button" id="credit" class="list-group-item">Kredit</li>
+                <li type="button" id="debit" class="list-group-item">Debit</li>
+                <li type="button" id="taksit" class="list-group-item">Taksit</li>
+                <li type="button" id="transfer" class="list-group-item">Köçürmələr üçün</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="list-group list-group-horizontal rounded-pill">
+                <li type="button" id="mastercard" class="list-group-item">MasterCard</li>
+                <li type="button" id="visa" class="list-group-item">Visa</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="list-group list-group-horizontal rounded-pill">
+                <li type="button" id="classic" class="list-group-item">Classic</li>
+                <li type="button" id="gold" class="list-group-item">Gold</li>
+                <li type="button" id="premium" class="list-group-item">Premium</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="list-group list-group-horizontal rounded-pill">
+                <li type="button" id="azn" class="list-group-item">₼</li>
+                <li type="button" id="dollar" class="list-group-item">$</li>
+                <li type="button" id="euro" class="list-group-item">€</li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="container mb-5">
+    {% for card in cards %}
+    <div id="filter" class="card mb-4 {{ card.filter }}">
+        <div class="row g-0">
+            <div class="container col-md-3 d-flex flex-column justify-content-between">
+                <img src="{{ card.card_img }}" class="img-fluid rounded-start mt-3 m-auto" width="250px" height="150px">
+                <a class="btn btn-info rounded-pill text-light w-75 mx-auto my-3" href="{{ url_for('card_order') }}"
+                    role="button">Sifariş et</a>
+                <a class="btn btn-light rounded-pill w-75 mx-auto mb-3"
+                    href="{{ url_for('card_detail', id = card.id) }}" role="button">Ətraflı</a>
+            </div>
+            <div class="col-md-9">
+                <div class="card-body">
+                    <h5 class="card-title mb-3">{{ card.card_name }}</h5>
+                    {% if card.description == ' ' %}
+                    <br><br>
+                    {% else %}
+                    <p class="card-text">{{ card.description }}</p>
+                    {% endif %}
+                    <div class="row">
+                        {% if card.price != ' ' %}
+                        <div class="col-3">
+                            <h6>{{ card.price }}</h6>
+                            <p>{{ card.price_v }}</p>
+                        </div>
+                        {% endif %}
+                        {% if card.duration != ' ' %}
+                        <div class="col-3">
+                            <h6>{{ card.duration }}</h6>
+                            <p>{{ card.duration_v }}</p>
+                        </div>
+                        {% endif %}
+                        {% if card.percent != ' ' %}
+                        <div class="col-3">
+                            <h6>{{ card.percent }}</h6>
+                            <p>{{ card.percent_v }}</p>
+                        </div>
+                        {% endif %}
+                        {% if card.currency != ' ' %}
+                        <div class="col-3">
+                            <h6>{{ card.currency }}</h6>
+                            <p>{{ card.currency_v }}</p>
+                        </div>
+                        {% endif %}
+                        {% if card.credit_line != ' ' %}
+                        <div class="col-3">
+                            <h6>{{ card.credit_line }}</h6>
+                            <p>{{ card.credit_line_v }}</p>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
+
+{% block footer %}
+<script src="/static/js/plastic_cards.js"></script>
+{% endblock %}

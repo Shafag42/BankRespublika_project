@@ -1,0 +1,36 @@
+.listsytle {
+    list-style-type: none;
+}
+
+.fa {
+    height: 40px;
+    width: 40px;
+    padding: 10px;
+    margin: 5px 2px;
+    text-align: center;
+}
+
+.fa-facebook {
+    background: #306EAD;
+    color: white !important;
+}
+
+.fa-twitter {
+    background: #00C0E7;
+    color: white !important;
+}
+
+.fa-google-plus {
+    background: #FF3D2F;
+    color: white !important;
+}
+
+.fa-vk {
+    background: #296790;
+    color: white !important;
+}
+
+.fa-linkedin {
+    background: #0097BD;
+    color: white !important;
+}

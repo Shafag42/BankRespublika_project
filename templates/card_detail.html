@@ -1,0 +1,65 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Card detail</title>
+{% endblock %}
+
+{% block content %}
+<div class="card mb-5" style="min-height: 330px; background-image: url('/static/images/bg.png');">
+    <div class="row g-0">
+        <div class="container col-md-3 d-flex flex-column justify-content-between">
+            <img src="{{ card.card_img }}" class="img-fluid rounded-start mb-3 mt-5 mx-auto" width="250px"
+                height="150px">
+            <a class="btn btn-info rounded-pill text-light w-75 mx-auto mb-5" href="{{ url_for('card_order') }}"
+                role="button">Sifariş et</a>
+        </div>
+        <div class="col-md-9">
+            <div class="card-body">
+                {% if card.description == ' ' %}
+                <h5 class="card-title text-light my-5">{{ card.card_name }}</h5>
+                {% else %}
+                <h5 class="card-title text-light my-4">{{ card.card_name }}</h5>
+                <p class="card-text text-light">{{ card.description }}</p>
+                {% endif %}
+                <div class="row my-5">
+                    {% if card.price != ' ' %}
+                    <div class="col-3 text-light">
+                        <h6>{{ card.price }}</h6>
+                        <p>{{ card.price_v }}</p>
+                    </div>
+                    {% endif %}
+                    {% if card.duration != ' ' %}
+                    <div class="col-3 text-light">
+                        <h6>{{ card.duration }}</h6>
+                        <p>{{ card.duration_v }}</p>
+                    </div>
+                    {% endif %}
+                    {% if card.percent != ' ' %}
+                    <div class="col-3 text-light">
+                        <h6>{{ card.percent }}</h6>
+                        <p>{{ card.percent_v }}</p>
+                    </div>
+                    {% endif %}
+                    {% if card.currency != ' ' %}
+                    <div class="col-3 text-light">
+                        <h6>{{ card.currency }}</h6>
+                        <p>{{ card.currency_v }}</p>
+                    </div>
+                    {% endif %}
+                    {% if card.credit_line != ' ' %}
+                    <div class="col-3 text-light">
+                        <h6>{{ card.credit_line }}</h6>
+                        <p>{{ card.credit_line_v }}</p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container bg-light p-0">
+    <h4 class="text-center mb-3 pt-5">{{ card.card_name }}</h4>
+    {{ card.detail | safe }}
+</div>
+{% endblock %}

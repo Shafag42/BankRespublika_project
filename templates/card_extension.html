@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Card Order</title>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h3 class="my-5">Kartın onlayn uzadılması</h3>
+    <form action="" method="POST" class="bg-light">
+        {{form.csrf_token}}
+        <div class="row mt-3">
+            <div class="col-4 my-3">
+                {{ form.last_8.label(class = 'form-label', for="last_8") }}
+                {{ form.last_8( class="form-control rounded-pill", id="last_8", placeholder="son 8 rəqəmi girin") }}
+            </div>
+            <div class="col-4 my-3">
+                {{ form.passport.label(class = 'form-label', for="passport") }}
+                {{ form.passport( class="form-control rounded-pill", id="passport",
+                placeholder="AZE00000000/AA0000000")}}
+            </div>
+            <div class="col-4 my-3">
+                {{ form.phone_number.label(class = 'form-label', for="pname") }}
+                {{ form.phone_number( class="form-control rounded-pill", id="pname", placeholder="+994000000000") }}
+            </div>
+            <div class="col-4 my-3">
+                <label for="order" class="mb-2">Sifariş növü:</label>
+                {% for subfield in form.order %}
+                {{ subfield.label( class="form-control rounded-pill", id="order") }}
+                {{ subfield(class = 'form-label', for="order") }}
+                {% endfor %}
+            </div>
+            <div class="col-4 mt-3">
+                {{ form.filial.label(class = 'form-label', for="filial") }}
+                {{ form.filial( class="form-control rounded-pill", id="filial") }}
+            </div>
+        </div>
+        <div class="d-flex justify-content-end">
+            <button type="submit" class="btn btn-outline-primary rounded-pill mb-3 me-5 py-2 px-5">Göndər</button>
+        </div>
+    </form>
+</div>
+
+
+
+{% endblock %}
